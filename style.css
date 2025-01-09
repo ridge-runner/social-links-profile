@@ -150,9 +150,10 @@
     width: 100%;
     max-width: 350px;
     padding: 1.2rem;
+    margin-block-end: 1.5rem;
 
     background-color: var(--grey-800);
-    border-radius: 25px;
+    border-radius: 10px;
 
     text-align: left;
     & h1 {
@@ -192,8 +193,18 @@
     & .list-item {
       padding: 0.5rem 0.8rem;
       background-color: var(--grey-700);
-      border-radius: 10px;
+      border-radius: 5px;
       text-align: center;
     }
+  }
+}
+
+@layer utils {}
+
+@layer states {
+  .list-item:hover {
+    background-color: var(--green);
+    color: var(--grey-800);
+    cursor: pointer;
   }
 }
